@@ -1,0 +1,106 @@
+// ========================================================
+// DESCRIPTION.EXT
+// ========================================================
+// Don't forget to alter the header and details as per your mission.
+// =====================================================================================
+// Don't alter the respawn settings for a Sunday mission.
+// =====================================================================================
+// DON'T COPY CODE UNLESS YOU KNOW WHAT IT DOES!
+// =====================================================================================
+
+
+// Mission header
+// =============================
+class Header {
+   gameType = COOP;
+   minPlayers = 1;
+   maxPlayers = 18;
+};
+// =============================
+
+// Mission details
+// =============================
+author = "[HC] Havoc Company - {{MISSIONEDITOR_NAME}}";
+onLoadName = "{{MISSION NAME}}";
+onLoadMission = "www.havoc-company.com";
+Loadscreen = "imagepath.jpg";
+// =============================
+
+// Respawn settings
+// =============================
+respawn = 3;
+respawnDelay = 15;
+respawnDialog = 1;
+respawnOnStart = 0;
+respawnTemplates[] = {"Base","MenuPosition"};
+// =============================
+
+// Clean-up settings
+// =============================
+corpseManagerMode = 1;
+corpseLimit = 15;
+corpseRemovalMinTime = 120;
+corpseRemovalMaxTime = 1200;
+// =============================
+
+// Misc settings
+// =============================
+disabledAI = 1;
+joinUnassigned = 1;
+enableDebugConsole = 1;
+saving = 0;
+// =============================
+
+
+// FRANTIC NOTIFICATIONS
+class CfgNotifications {
+
+    class Default
+
+    {
+        title = "INFORMATION";
+        iconPicture = "";
+        iconText = "";
+        description = "";
+        color[] = {1,1,1,1};
+        duration = 5;
+        priority = 0;
+        difficulty[] = {};
+    };
+
+    class HAVOCNotice
+
+    {
+        title = "ALERT";
+        iconPicture = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\instructor_ca.paa";
+        iconText = "+%2";
+        description = "%1";
+        color[] = {1,1,1,1};
+        duration = 4;
+    };
+
+    class HAVOCIntel
+
+    {
+        title = "New Intel";
+        iconPicture = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\instructor_ca.paa";
+        iconText = "+%2";
+        description = "%1";
+        color[] = {1,1,1,1};
+        duration = 4;
+    };
+
+    
+
+    class HAVOCRespawn
+
+    {
+        title = "Respawn";
+        //iconPicture = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\instructor_ca.paa";
+        iconText = "+%2";
+        description = "%1";
+        color[] = {1,1,1,1};
+        duration = 4;
+    };
+
+};
