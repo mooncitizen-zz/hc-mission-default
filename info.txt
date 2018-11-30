@@ -1,0 +1,3 @@
+init.sqf > Description
+onPlayerRespawn.sqf > Description
+description.ext > Description
